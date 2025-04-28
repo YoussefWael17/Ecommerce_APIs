@@ -18,6 +18,7 @@ class Category(models.Model):
     name = models.CharField(max_length=100)
     slug = models.SlugField(unique=True, blank=True)
     image = models.ImageField(upload_to="category_imgs", blank=True, null=True)
+    featured = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
