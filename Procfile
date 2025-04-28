@@ -1,1 +1,2 @@
-web: gunicorn --bind 0.0.0.0:$PORT ecommerce.wsgi:application
+web: daphne -u /tmp/daphne.sock ecommerce.asgi:application
+
