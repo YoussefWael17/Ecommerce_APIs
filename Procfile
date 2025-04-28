@@ -1,2 +1,1 @@
-web: daphne -u /tmp/daphne.sock ecommerce.asgi:application
-
+web: daphne -u 0.0.0.0:$PORT ecommerce.asgi:application --http2
