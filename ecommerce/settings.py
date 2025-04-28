@@ -30,6 +30,8 @@ SECRET_KEY = 'django-insecure-idglzin)a%zz&22h+$mpyn%b8i&kmshq)@i$0#!na+r%o=(wq-
 # DEBUG = False
 DEBUG = True
 
+CSRF_TRUSTED_ORIGINS = [" https://ecommerceapis-production-c36a.up.railway.app"]
+
 ALLOWED_HOSTS = ["*"]
 
 
