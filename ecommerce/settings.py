@@ -175,8 +175,12 @@ STRIPE_PUBLIC_KEY = os.getenv("STRIPE_PUBLIC_KEY")
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET")
 
 
+# STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
